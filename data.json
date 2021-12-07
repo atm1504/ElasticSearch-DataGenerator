@@ -1,0 +1,456 @@
+[
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "hagJe30BjIp0CBLS7Els",
+        "_version": 2,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "conversions": 8.166667,
+            "ingestion_time": "2021-12-02T12:06:40.737Z",
+            "channel": "GOOGLE",
+            "agency_id": 79,
+            "impressions": 1949,
+            "line_id": "113891829773",
+            "creative_id": "483794209624",
+            "video_view_complete": 0,
+            "advertiser_id": 82,
+            "account_id": "6472380435",
+            "job_id": 1024,
+            "spend": 1976480000,
+            "video_view_25p": 0,
+            "clicks": 197,
+            "video_view_75p": 0,
+            "campaign_id": "11765801249",
+            "video_view_50p": 0
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T12:06:40.737Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "i6gJe30BjIp0CBLS7Els",
+        "_version": 2,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "conversions": 0,
+            "ingestion_time": "2021-12-02T12:06:40.737Z",
+            "channel": "GOOGLE",
+            "agency_id": 79,
+            "impressions": 6,
+            "line_id": "127284931385",
+            "creative_id": "549225733883",
+            "video_view_complete": 0,
+            "advertiser_id": 82,
+            "account_id": "6472380435",
+            "job_id": 1024,
+            "spend": 0,
+            "video_view_25p": 0,
+            "clicks": 0,
+            "video_view_75p": 0,
+            "campaign_id": "14823424775",
+            "video_view_50p": 0
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T12:06:40.737Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "jagJe30BjIp0CBLS7Els",
+        "_version": 2,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "conversions": 0,
+            "ingestion_time": "2021-12-02T12:06:40.737Z",
+            "channel": "GOOGLE",
+            "agency_id": 79,
+            "impressions": 409,
+            "line_id": "127649136469",
+            "creative_id": "550546565026",
+            "video_view_complete": 0,
+            "advertiser_id": 82,
+            "account_id": "6472380435",
+            "job_id": 1024,
+            "spend": 22039455,
+            "video_view_25p": 0,
+            "clicks": 1,
+            "video_view_75p": 0,
+            "campaign_id": "14881489614",
+            "video_view_50p": 0
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T12:06:40.737Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "jKgJe30BjIp0CBLS7Els",
+        "_version": 2,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "conversions": 0,
+            "ingestion_time": "2021-12-02T12:06:40.737Z",
+            "channel": "GOOGLE",
+            "agency_id": 79,
+            "impressions": 13,
+            "line_id": "127284931385",
+            "creative_id": "549225733886",
+            "video_view_complete": 0,
+            "advertiser_id": 82,
+            "account_id": "6472380435",
+            "job_id": 1024,
+            "spend": 0,
+            "video_view_25p": 0,
+            "clicks": 0,
+            "video_view_75p": 0,
+            "campaign_id": "14823424775",
+            "video_view_50p": 0
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T12:06:40.737Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "iagJe30BjIp0CBLS7Els",
+        "_version": 2,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "conversions": 0.333334,
+            "ingestion_time": "2021-12-02T12:06:40.737Z",
+            "channel": "GOOGLE",
+            "agency_id": 79,
+            "impressions": 21,
+            "line_id": "127284931385",
+            "creative_id": "549225733877",
+            "video_view_complete": 0,
+            "advertiser_id": 82,
+            "account_id": "6472380435",
+            "job_id": 1024,
+            "spend": 1660000,
+            "video_view_25p": 0,
+            "clicks": 3,
+            "video_view_75p": 0,
+            "campaign_id": "14823424775",
+            "video_view_50p": 0
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T12:06:40.737Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "2g--fH0B__KaZ_nd__kV",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "account_id": "act_903970073442940",
+            "campaign_id": "23849725966810369",
+            "line_id": "23849725967160369",
+            "creative_id": "23849725967310369",
+            "impressions": 0,
+            "clicks": 0,
+            "spend": 0,
+            "video_view_25p": 0,
+            "video_view_50p": 0,
+            "video_view_75p": 0,
+            "video_view_complete": 0,
+            "ingestion_time": "2021-12-02T20:03:51.503Z",
+            "job_id": 1026,
+            "channel": "FACEBOOK",
+            "agency_id": 79,
+            "advertiser_id": 82,
+            "campaign_status": "ACTIVE",
+            "campaign_name": "Imported Fruits - BLR",
+            "line_status": "ACTIVE",
+            "line_name": "Imported Fruits - BLR - General Audience",
+            "creative_status": "ACTIVE",
+            "creative_name": "OrgFarm 2021-10-25-46cf1e0c036eff033448c79dd45ab03e",
+            "ad_type": "SHARE"
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T20:03:51.503Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "1w--fH0B__KaZ_nd__kV",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "account_id": "act_903970073442940",
+            "campaign_id": "23846437463240369",
+            "line_id": "23846437463260369",
+            "creative_id": "23846437463280369",
+            "impressions": 0,
+            "clicks": 0,
+            "spend": 0,
+            "video_view_25p": 0,
+            "video_view_50p": 0,
+            "video_view_75p": 0,
+            "video_view_complete": 0,
+            "ingestion_time": "2021-12-02T20:03:51.503Z",
+            "job_id": 1026,
+            "channel": "FACEBOOK",
+            "agency_id": 79,
+            "advertiser_id": 82,
+            "campaign_status": "ACTIVE",
+            "campaign_name": "orgfarmoil_sep2020",
+            "line_status": "ACTIVE",
+            "line_name": "Adset_conversion",
+            "creative_status": "ACTIVE",
+            "creative_name": "Free Home Delivery 2020-10-15-e4ca6c925a126434c8df15d381c079d4",
+            "ad_type": "SHARE"
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T20:03:51.503Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "2w--fH0B__KaZ_nd__kV",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "account_id": "act_903970073442940",
+            "campaign_id": "23849765193560369",
+            "line_id": "23849765193950369",
+            "creative_id": "23849765194020369",
+            "impressions": 0,
+            "clicks": 0,
+            "spend": 0,
+            "video_view_25p": 0,
+            "video_view_50p": 0,
+            "video_view_75p": 0,
+            "video_view_complete": 0,
+            "ingestion_time": "2021-12-02T20:03:51.503Z",
+            "job_id": 1026,
+            "channel": "FACEBOOK",
+            "agency_id": 79,
+            "advertiser_id": 82,
+            "campaign_status": "ACTIVE",
+            "campaign_name": "Dairy & Milk - BLR",
+            "line_status": "ACTIVE",
+            "line_name": "Dairy & Milk - General Audience",
+            "creative_status": "ACTIVE",
+            "creative_name": "OrgFarm 2021-10-26-c801b0da7764e80aaa3e2239ff97691f",
+            "ad_type": "SHARE"
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T20:03:51.503Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "9w--fH0B__KaZ_nd7via",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "account_id": "act_3427969697428048",
+            "campaign_id": "23845998298760213",
+            "line_id": "23845998298820213",
+            "creative_id": "23845998784140213",
+            "impressions": 8194,
+            "clicks": 24,
+            "spend": 6870000,
+            "video_view_25p": 0,
+            "video_view_50p": 0,
+            "video_view_75p": 0,
+            "video_view_complete": 0,
+            "ingestion_time": "2021-12-02T20:03:46.666Z",
+            "job_id": 1025,
+            "channel": "FACEBOOK",
+            "agency_id": 79,
+            "advertiser_id": 82,
+            "campaign_status": "ACTIVE",
+            "campaign_name": "festive_campaign",
+            "line_status": "ACTIVE",
+            "line_name": "festive_ad_set",
+            "creative_status": "ACTIVE",
+            "creative_name": "Next Day Delivery | Daily Essentials 2020-12-02-101a6368af02d69cb5fd9d41b4a1e74a",
+            "ad_type": "SHARE"
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T20:03:46.666Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "3g--fH0B__KaZ_nd__kY",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+            "date": "2021-12-01T00:00:00.000Z",
+            "account_id": "act_903970073442940",
+            "campaign_id": "23849783518160369",
+            "line_id": "23849783566440369",
+            "creative_id": "23849783566450369",
+            "impressions": 0,
+            "clicks": 0,
+            "spend": 0,
+            "video_view_25p": 0,
+            "video_view_50p": 0,
+            "video_view_75p": 0,
+            "video_view_complete": 0,
+            "ingestion_time": "2021-12-02T20:03:51.503Z",
+            "job_id": 1026,
+            "channel": "FACEBOOK",
+            "agency_id": 79,
+            "advertiser_id": 82,
+            "campaign_status": "ACTIVE",
+            "campaign_name": "Cold Pressed Oil - BLR",
+            "line_status": "ACTIVE",
+            "line_name": "Cold Pressed Oil - BLR - Retargeting - Website, ATC & Purchase",
+            "creative_status": "ACTIVE",
+            "creative_name": "OrgFarm 2021-10-28-a5957c5de2ce626ddefe0eda7a14b6db",
+            "ad_type": "SHARE"
+        },
+        "fields": {
+            "date": [
+                "2021-12-01T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T20:03:51.503Z"
+            ]
+        },
+        "sort": [
+            1638316800000
+        ]
+    },
+    {
+        "_index": "cdmp-metrics",
+        "_type": "_doc",
+        "_id": "9A--fH0B__KaZ_nd7via",
+        "_version": 1,
+        "_score": null,
+        "_source": {
+            "date": "2021-11-30T00:00:00.000Z",
+            "account_id": "act_3427969697428048",
+            "campaign_id": "23845998298760213",
+            "line_id": "23845998298820213",
+            "creative_id": "23845998298890213",
+            "impressions": 10802,
+            "clicks": 147,
+            "spend": 28310000,
+            "video_view_25p": 0,
+            "video_view_50p": 0,
+            "video_view_75p": 0,
+            "video_view_complete": 0,
+            "ingestion_time": "2021-12-02T20:03:46.666Z",
+            "job_id": 1025,
+            "channel": "FACEBOOK",
+            "agency_id": 79,
+            "advertiser_id": 82,
+            "campaign_status": "ACTIVE",
+            "campaign_name": "festive_campaign",
+            "line_status": "ACTIVE",
+            "line_name": "festive_ad_set",
+            "creative_status": "ACTIVE",
+            "creative_name": "Next Day Delivery | Daily Essentials 2020-12-02-ce0924fd979f5feb737a28fe9c06b24e",
+            "ad_type": "SHARE"
+        },
+        "fields": {
+            "date": [
+                "2021-11-30T00:00:00.000Z"
+            ],
+            "ingestion_time": [
+                "2021-12-02T20:03:46.666Z"
+            ]
+        },
+        "sort": [
+            1638230400000
+        ]
+    }
+]
