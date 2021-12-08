@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass
-class Structure:
+class ElasticStructure:
     date:str
     conversions:float
     ingestion_time:str

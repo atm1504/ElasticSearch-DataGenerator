@@ -1,0 +1,20 @@
+{
+    "date": "2021-12-01T00:00:00.000Z",
+    "conversions": 8.166667,
+    "ingestion_time": "2021-12-02T12:06:40.737Z",
+    "channel": "GOOGLE",
+    "agency_id": 79,
+    "impressions": 1949,
+    "line_id": "113891829773",
+    "creative_id": "483794209624",
+    "video_view_complete": 0,
+    "advertiser_id": 82,
+    "account_id": "6472380435",
+    "job_id": 1024,
+    "spend": 1976480000,
+    "video_view_25p": 0,
+    "clicks": 197,
+    "video_view_75p": 0,
+    "campaign_id": "11765801249",
+    "video_view_50p": 0
+}

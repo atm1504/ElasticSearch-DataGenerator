@@ -1,0 +1,13 @@
+{
+    "input_file_path": "input_type.json",
+    "output_type_file_path": "output_type.json",
+    "keys_to_be_extracted": [
+        "channel",
+        "creative_id",
+        "agency_id",
+        "line_id",
+        "advertiser_id",
+        "account_id",
+        "campaign_id"
+    ]
+}
