@@ -9,5 +9,23 @@
         "advertiser_id",
         "account_id",
         "campaign_id"
+    ],
+    "start_date": "2021-12-01T00:00:00.000Z",
+    "end_date": "2021-12-01T00:00:00.000Z",
+    "random_int_low": 0,
+    "random_int_high": 10000,
+    "random_float_low": 0,
+    "random_float_high": 100,
+    "random_integers": [
+        "impressions",
+        "video_view_complete",
+        "advertiser_id",
+        "video_view_25p",
+        "clicks",
+        "video_view_75p",
+        "video_view_50p"
+    ],
+    "random_floats": [
+        "conversions"
     ]
 }
