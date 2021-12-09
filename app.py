@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from utility import isKeyPresent, getKeyValue, dataExtractionMapper, getRandomInt, getRandomFloat, getDates
+from utility import isKeyPresent, getKeyValue, dataExtractionMapper, getRandomInt, getRandomFloat, getDates, uploadData
 from structure import ElasticStructure
 import constants as constant
 
@@ -96,6 +96,18 @@ def generateData():
 
 
 response = generateData()
-with open('response.json', 'w') as f:
-    json.dump(response, f)
-# "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+
+url = config[constant.ELASTIC_BASE_URL]+config[constant.INDEX_NAME]+"/_bulk"
+batch_size = config[constant.BATCH_SIZE]
+try:
+    uploadData(response, url, batch_size)
+    try:
+        with open('response.json', 'w') as f:
+            json.dump(response, f)
+        f.close()
+        print("Succesfully completed the process")
+    except:
+        print("Error occurred while saving the data into json")
+except:
+    print("Error occurred while uploading the data")
+

@@ -28,5 +28,8 @@
     "random_floats": [
         "conversions"
     ],
-    "frequency_each": 1
+    "frequency_each": 1,
+    "index_name": "scripttest",
+    "elastic_base_url": "https://search-cdmplite-dev-4txtwjb4xv627km63xqh5tuqy4.us-west-2.es.amazonaws.com/",
+    "batch_size": 200
 }
