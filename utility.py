@@ -1,4 +1,6 @@
 import random
+import pandas
+from datetime import datetime
 
 
 def isKeyPresent(obj, key):
@@ -24,3 +26,9 @@ def getRandomInt(low, high):
 
 def getRandomFloat(low, high):
     return random.uniform(low, high)
+
+
+def getDates(startDate, endDate):
+    temp = pandas.date_range(startDate, endDate, freq='d')
+    res = [str(x) for x in temp]
+    return res

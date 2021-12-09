@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from utility import isKeyPresent, getKeyValue, dataExtractionMapper, getRandomInt, getRandomFloat
+from utility import isKeyPresent, getKeyValue, dataExtractionMapper, getRandomInt, getRandomFloat, getDates
 from structure import ElasticStructure
 import constants as constant
 
@@ -47,7 +47,6 @@ channel_wise_data = parseIncomingData(input_data, keys_to_be_extracted)
 
 def getElasticObject(sample, low_int, high_int, low_float, high_float, parentObj, date, random_floats, random_integers):
     keys = sample.keys()
-    print(keys)
     obj = {}
     for key in keys:
         if key == constant.DATE:
@@ -82,12 +81,16 @@ def generateData():
 
     res = []
 
-    for source,  items in channel_wise_data.items():
-        for item in items:
-            for _ in range(frequency_each):
-                temp = getElasticObject(output_type_data, random_int_low,
-                                        random_int_high,  random_float_low, random_float_high, channel_wise_data["GOOGLE"][0], "2021-12-01T00:00:00.000Z", random_floats, random_integers)
-                res.append(temp)
+    # dates = pandas.date_range(start_date, end_date, freq='d')
+    dates = getDates(start_date, end_date)
+
+    for date in dates:
+        for source,  items in channel_wise_data.items():
+            for item in items:
+                for _ in range(frequency_each):
+                    temp = getElasticObject(output_type_data, random_int_low,
+                                            random_int_high,  random_float_low, random_float_high, item, date, random_floats, random_integers)
+                    res.append(temp)
 
     return res
 
@@ -95,3 +98,4 @@ def generateData():
 response = generateData()
 with open('response.json', 'w') as f:
     json.dump(response, f)
+# "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
