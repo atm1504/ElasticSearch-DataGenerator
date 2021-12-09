@@ -48,7 +48,7 @@ channel_wise_data = parseIncomingData(input_data, keys_to_be_extracted)
 def getElasticObject(sample, low_int, high_int, low_float, high_float, parentObj, date, random_floats, random_integers):
     keys = sample.keys()
     print(keys)
-    obj = dict()
+    obj = {}
     for key in keys:
         if key == constant.DATE:
             obj[key] = date
@@ -61,17 +61,37 @@ def getElasticObject(sample, low_int, high_int, low_float, high_float, parentObj
         else:
             obj[key] = sample[key]
 
-    return json.dumps(obj, indent=4)
+    return obj
 
 
-random_floats = []
-random_integers = []
-if config and config[constant.RANDOM_INTEGERS]:
-    random_integers = config[constant.RANDOM_INTEGERS]
+def generateData():
+    random_floats = []
+    random_integers = []
+    if config and config[constant.RANDOM_INTEGERS]:
+        random_integers = config[constant.RANDOM_INTEGERS]
+
+    if config and config[constant.RANDOM_FLOATS]:
+        random_floats = config[constant.RANDOM_FLOATS]
+    random_int_low = config[constant.RANDOM_INT_LOW]
+    random_int_high = config[constant.RANDOM_INT_HIGH]
+    random_float_low = config[constant.RANDOM_FLOAT_LOW]
+    random_float_high = config[constant.RANDOM_FLOAT_HIGH]
+    start_date = config[constant.START_DATE]
+    end_date = config[constant.END_DATE]
+    frequency_each = config[constant.FREQUENCY_EACH]
+
+    res = []
+
+    for source,  items in channel_wise_data.items():
+        for item in items:
+            for _ in range(frequency_each):
+                temp = getElasticObject(output_type_data, random_int_low,
+                                        random_int_high,  random_float_low, random_float_high, channel_wise_data["GOOGLE"][0], "2021-12-01T00:00:00.000Z", random_floats, random_integers)
+                res.append(temp)
+
+    return res
 
 
-if config and config[constant.RANDOM_FLOATS]:
-    random_floats = config[constant.RANDOM_FLOATS]
-
-print(getElasticObject(output_type_data, 0,
-      1000,  0, 100, channel_wise_data["GOOGLE"][0], "2021-12-01T00:00:00.000Z", random_floats, random_integers))
+response = generateData()
+with open('response.json', 'w') as f:
+    json.dump(response, f)
