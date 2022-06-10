@@ -31,6 +31,14 @@ from_no = 0
 batch_size = 200
 to_no = batch_size
 
+
+def formObject(obj):
+    updt_obj = obj['_source']
+    updt_obj['account_id'] = 'b'+str(updt_obj['account_id'])
+    updt_obj['advertiser_id'] = 445
+    temp = []
+
+
 while True:
     url = base_url+"?size="+str(batch_size)+"&from="+str(from_no)
     from_no += batch_size
