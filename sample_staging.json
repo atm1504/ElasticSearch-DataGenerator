@@ -1,0 +1,850 @@
+{
+  "hits": [
+    {
+      "_index": "cdmp_user_profiles_stg",
+      "_type": "_doc",
+      "_id": "232-654654",
+      "_version": 20,
+      "_score": null,
+      "fields": {
+        "traits.Trait_EC_3": [
+          0
+        ],
+        "traits.Trait_EC_4": [
+          0
+        ],
+        "traits.plan.keyword": [
+          "premium"
+        ],
+        "traits.Trait_EC_5": [
+          0
+        ],
+        "traits.Trait_EC_6": [
+          0
+        ],
+        "cdmpAccountId.keyword": [
+          "232"
+        ],
+        "traits.Trait_EC_1": [
+          0
+        ],
+        "traits.Trait_EC_2": [
+          0
+        ],
+        "traits.unique_list_count": [
+          0
+        ],
+        "traits.name.keyword": [
+          "tiM1S23"
+        ],
+        "traits.address.country": [
+          "USA"
+        ],
+        "segments": [
+          61,
+          68
+        ],
+        "traits.address.state.keyword": [
+          "CA"
+        ],
+        "traits.Trait_agg_1": [
+          0
+        ],
+        "traits.Trait_agg_2": [
+          0
+        ],
+        "traits.address.state": [
+          "CA"
+        ],
+        "id.keyword": [
+          "232-654654"
+        ],
+        "traits.Trait_agg_3": [
+          0
+        ],
+        "traits.Trait_agg_4": [
+          0
+        ],
+        "traits.address.street.keyword": [
+          "6th St"
+        ],
+        "traits.Trait_agg_5": [
+          0
+        ],
+        "traits.Trait_agg_6": [
+          0
+        ],
+        "traits.address.postalCode.keyword": [
+          "94103"
+        ],
+        "cdmpAccountId": [
+          "232"
+        ],
+        "audiences": [
+          12
+        ],
+        "id": [
+          "232-654654"
+        ],
+        "traits.address.city.keyword": [
+          "San Francisco"
+        ],
+        "traits.Trait_EC_7": [
+          0
+        ],
+        "traits.traait_event_Counter_string": [
+          0
+        ],
+        "traits.address.street": [
+          "6th St"
+        ],
+        "traits.name": [
+          "tiM1S23"
+        ],
+        "traits.email.keyword": [
+          "TIM12S3@example.com"
+        ],
+        "traits.email": [
+          "TIM12S3@example.com"
+        ],
+        "traits.address.country.keyword": [
+          "USA"
+        ],
+        "userId": [
+          "654654"
+        ],
+        "traits.logins": [
+          0
+        ],
+        "@timestamp": [
+          "2022-02-14T11:51:27.000Z"
+        ],
+        "traits.address.city": [
+          "San Francisco"
+        ],
+        "traits.address.postalCode": [
+          "94103"
+        ],
+        "traits.plan": [
+          "premium"
+        ],
+        "userId.keyword": [
+          "654654"
+        ]
+      },
+      "highlight": {
+        "cdmpAccountId": [
+          "@kibana-highlighted-field@232@/kibana-highlighted-field@"
+        ]
+      },
+      "sort": [
+        1644839487000
+      ]
+    },
+    {
+      "_index": "cdmp_user_profiles_stg",
+      "_type": "_doc",
+      "_id": "232-UT1",
+      "_version": 19,
+      "_score": null,
+      "fields": {
+        "traits.Trait_EC_3": [
+          0
+        ],
+        "traits.Trait_EC_4": [
+          0
+        ],
+        "traits.plan.keyword": [
+          "premium"
+        ],
+        "traits.Trait_EC_5": [
+          0
+        ],
+        "traits.Trait_EC_6": [
+          2
+        ],
+        "cdmpAccountId.keyword": [
+          "232"
+        ],
+        "traits.Trait_EC_1": [
+          3
+        ],
+        "traits.Trait_EC_2": [
+          0
+        ],
+        "traits.unique_list_count": [
+          0
+        ],
+        "traits.name.keyword": [
+          "suganth123"
+        ],
+        "traits.address.country": [
+          "USA"
+        ],
+        "segments": [
+          61,
+          68
+        ],
+        "traits.address.state.keyword": [
+          "CA"
+        ],
+        "traits.Trait_agg_1": [
+          770
+        ],
+        "traits.Trait_agg_2": [
+          500
+        ],
+        "traits.address.state": [
+          "CA"
+        ],
+        "id.keyword": [
+          "232-UT1"
+        ],
+        "traits.Trait_agg_3": [
+          2
+        ],
+        "traits.Trait_agg_4": [
+          2
+        ],
+        "traits.address.street.keyword": [
+          "6th St"
+        ],
+        "traits.Trait_agg_5": [
+          99
+        ],
+        "traits.Trait_agg_6": [
+          69
+        ],
+        "traits.address.postalCode.keyword": [
+          "94103"
+        ],
+        "cdmpAccountId": [
+          "232"
+        ],
+        "audiences": [
+          12
+        ],
+        "id": [
+          "232-UT1"
+        ],
+        "traits.address.city.keyword": [
+          "San Francisco"
+        ],
+        "traits.Trait_EC_7": [
+          3
+        ],
+        "traits.traait_event_Counter_string": [
+          2
+        ],
+        "traits.address.street": [
+          "6th St"
+        ],
+        "traits.name": [
+          "suganth123"
+        ],
+        "traits.email.keyword": [
+          "suganth123@example.com"
+        ],
+        "traits.email": [
+          "suganth123@example.com"
+        ],
+        "traits.address.country.keyword": [
+          "USA"
+        ],
+        "userId": [
+          "UT1"
+        ],
+        "traits.logins": [
+          0
+        ],
+        "@timestamp": [
+          "2022-02-14T11:51:27.000Z"
+        ],
+        "traits.address.city": [
+          "San Francisco"
+        ],
+        "traits.address.postalCode": [
+          "94103"
+        ],
+        "traits.plan": [
+          "premium"
+        ],
+        "userId.keyword": [
+          "UT1"
+        ]
+      },
+      "highlight": {
+        "cdmpAccountId": [
+          "@kibana-highlighted-field@232@/kibana-highlighted-field@"
+        ]
+      },
+      "sort": [
+        1644839487000
+      ]
+    },
+    {
+      "_index": "cdmp_user_profiles_stg",
+      "_type": "_doc",
+      "_id": "232-UT5",
+      "_version": 19,
+      "_score": null,
+      "fields": {
+        "traits.Trait_EC_3": [
+          0
+        ],
+        "traits.Trait_EC_4": [
+          0
+        ],
+        "traits.plan.keyword": [
+          "premium"
+        ],
+        "traits.Trait_EC_5": [
+          1
+        ],
+        "traits.Trait_EC_6": [
+          0
+        ],
+        "cdmpAccountId.keyword": [
+          "232"
+        ],
+        "traits.Trait_EC_1": [
+          1
+        ],
+        "traits.Trait_EC_2": [
+          0
+        ],
+        "traits.unique_list_count": [
+          0
+        ],
+        "traits.name.keyword": [
+          "tiM1S23"
+        ],
+        "traits.address.country": [
+          "USA"
+        ],
+        "segments": [
+          61,
+          68
+        ],
+        "traits.address.state.keyword": [
+          "CA"
+        ],
+        "traits.Trait_agg_1": [
+          29
+        ],
+        "traits.Trait_agg_2": [
+          0
+        ],
+        "traits.address.state": [
+          "CA"
+        ],
+        "id.keyword": [
+          "232-UT5"
+        ],
+        "traits.Trait_agg_3": [
+          100
+        ],
+        "traits.Trait_agg_4": [
+          0
+        ],
+        "traits.address.street.keyword": [
+          "6th St"
+        ],
+        "traits.Trait_agg_5": [
+          1070
+        ],
+        "traits.Trait_agg_6": [
+          0
+        ],
+        "traits.address.postalCode.keyword": [
+          "94103"
+        ],
+        "cdmpAccountId": [
+          "232"
+        ],
+        "audiences": [
+          12
+        ],
+        "id": [
+          "232-UT5"
+        ],
+        "traits.address.city.keyword": [
+          "San Francisco"
+        ],
+        "traits.Trait_EC_7": [
+          0
+        ],
+        "traits.traait_event_Counter_string": [
+          0
+        ],
+        "traits.address.street": [
+          "6th St"
+        ],
+        "traits.name": [
+          "tiM1S23"
+        ],
+        "traits.email.keyword": [
+          "TIM12S3@example.com"
+        ],
+        "traits.email": [
+          "TIM12S3@example.com"
+        ],
+        "traits.address.country.keyword": [
+          "USA"
+        ],
+        "userId": [
+          "UT5"
+        ],
+        "traits.logins": [
+          0
+        ],
+        "@timestamp": [
+          "2022-02-14T11:51:27.000Z"
+        ],
+        "traits.address.city": [
+          "San Francisco"
+        ],
+        "traits.address.postalCode": [
+          "94103"
+        ],
+        "traits.plan": [
+          "premium"
+        ],
+        "userId.keyword": [
+          "UT5"
+        ]
+      },
+      "highlight": {
+        "cdmpAccountId": [
+          "@kibana-highlighted-field@232@/kibana-highlighted-field@"
+        ]
+      },
+      "sort": [
+        1644839487000
+      ]
+    },
+    {
+      "_index": "cdmp_user_profiles_stg",
+      "_type": "_doc",
+      "_id": "232-UT3",
+      "_version": 19,
+      "_score": null,
+      "fields": {
+        "traits.Trait_EC_3": [
+          0
+        ],
+        "traits.Trait_EC_4": [
+          0
+        ],
+        "traits.plan.keyword": [
+          "premium"
+        ],
+        "traits.Trait_EC_5": [
+          0
+        ],
+        "traits.Trait_EC_6": [
+          1
+        ],
+        "cdmpAccountId.keyword": [
+          "232"
+        ],
+        "traits.Trait_EC_1": [
+          1
+        ],
+        "traits.Trait_EC_2": [
+          0
+        ],
+        "traits.unique_list_count": [
+          0
+        ],
+        "traits.name.keyword": [
+          "SAM123"
+        ],
+        "traits.address.country": [
+          "USA"
+        ],
+        "segments": [
+          61,
+          68
+        ],
+        "traits.address.state.keyword": [
+          "CA"
+        ],
+        "traits.Trait_agg_1": [
+          270
+        ],
+        "traits.Trait_agg_2": [
+          270
+        ],
+        "traits.address.state": [
+          "CA"
+        ],
+        "id.keyword": [
+          "232-UT3"
+        ],
+        "traits.Trait_agg_3": [
+          5
+        ],
+        "traits.Trait_agg_4": [
+          0
+        ],
+        "traits.address.street.keyword": [
+          "6th St"
+        ],
+        "traits.Trait_agg_5": [
+          74
+        ],
+        "traits.Trait_agg_6": [
+          0
+        ],
+        "traits.address.postalCode.keyword": [
+          "94103"
+        ],
+        "cdmpAccountId": [
+          "232"
+        ],
+        "audiences": [
+          12
+        ],
+        "id": [
+          "232-UT3"
+        ],
+        "traits.address.city.keyword": [
+          "San Francisco"
+        ],
+        "traits.Trait_EC_7": [
+          1
+        ],
+        "traits.traait_event_Counter_string": [
+          0
+        ],
+        "traits.address.street": [
+          "6th St"
+        ],
+        "traits.name": [
+          "SAM123"
+        ],
+        "traits.email.keyword": [
+          "SAM123@example.com"
+        ],
+        "traits.email": [
+          "SAM123@example.com"
+        ],
+        "traits.address.country.keyword": [
+          "USA"
+        ],
+        "userId": [
+          "UT3"
+        ],
+        "traits.logins": [
+          0
+        ],
+        "@timestamp": [
+          "2022-02-14T11:51:27.000Z"
+        ],
+        "traits.address.city": [
+          "San Francisco"
+        ],
+        "traits.address.postalCode": [
+          "94103"
+        ],
+        "traits.plan": [
+          "premium"
+        ],
+        "userId.keyword": [
+          "UT3"
+        ]
+      },
+      "highlight": {
+        "cdmpAccountId": [
+          "@kibana-highlighted-field@232@/kibana-highlighted-field@"
+        ]
+      },
+      "sort": [
+        1644839487000
+      ]
+    },
+    {
+      "_index": "cdmp_user_profiles_stg",
+      "_type": "_doc",
+      "_id": "232-UT2",
+      "_version": 19,
+      "_score": null,
+      "fields": {
+        "traits.Trait_EC_3": [
+          0
+        ],
+        "traits.Trait_EC_4": [
+          0
+        ],
+        "traits.plan.keyword": [
+          "premium"
+        ],
+        "traits.Trait_EC_5": [
+          0
+        ],
+        "traits.Trait_EC_6": [
+          1
+        ],
+        "cdmpAccountId.keyword": [
+          "232"
+        ],
+        "traits.Trait_EC_1": [
+          1
+        ],
+        "traits.Trait_EC_2": [
+          0
+        ],
+        "traits.unique_list_count": [
+          0
+        ],
+        "traits.name.keyword": [
+          "RAM123"
+        ],
+        "traits.address.country": [
+          "USA"
+        ],
+        "segments": [
+          61,
+          68
+        ],
+        "traits.address.state.keyword": [
+          "CA"
+        ],
+        "traits.Trait_agg_1": [
+          40
+        ],
+        "traits.Trait_agg_2": [
+          0
+        ],
+        "traits.address.state": [
+          "CA"
+        ],
+        "id.keyword": [
+          "232-UT2"
+        ],
+        "traits.Trait_agg_3": [
+          1
+        ],
+        "traits.Trait_agg_4": [
+          0
+        ],
+        "traits.address.street.keyword": [
+          "6th St"
+        ],
+        "traits.Trait_agg_5": [
+          20
+        ],
+        "traits.Trait_agg_6": [
+          20
+        ],
+        "traits.address.postalCode.keyword": [
+          "94103"
+        ],
+        "cdmpAccountId": [
+          "232"
+        ],
+        "audiences": [
+          12
+        ],
+        "id": [
+          "232-UT2"
+        ],
+        "traits.address.city.keyword": [
+          "San Francisco"
+        ],
+        "traits.Trait_EC_7": [
+          1
+        ],
+        "traits.traait_event_Counter_string": [
+          0
+        ],
+        "traits.address.street": [
+          "6th St"
+        ],
+        "traits.name": [
+          "RAM123"
+        ],
+        "traits.email.keyword": [
+          "RAM123@example.com"
+        ],
+        "traits.email": [
+          "RAM123@example.com"
+        ],
+        "traits.address.country.keyword": [
+          "USA"
+        ],
+        "userId": [
+          "UT2"
+        ],
+        "traits.logins": [
+          0
+        ],
+        "@timestamp": [
+          "2022-02-14T11:51:27.000Z"
+        ],
+        "traits.address.city": [
+          "San Francisco"
+        ],
+        "traits.address.postalCode": [
+          "94103"
+        ],
+        "traits.plan": [
+          "premium"
+        ],
+        "userId.keyword": [
+          "UT2"
+        ]
+      },
+      "highlight": {
+        "cdmpAccountId": [
+          "@kibana-highlighted-field@232@/kibana-highlighted-field@"
+        ]
+      },
+      "sort": [
+        1644839487000
+      ]
+    },
+    {
+      "_index": "cdmp_user_profiles_stg",
+      "_type": "_doc",
+      "_id": "232-UT4",
+      "_version": 19,
+      "_score": null,
+      "fields": {
+        "traits.Trait_EC_3": [
+          0
+        ],
+        "traits.Trait_EC_4": [
+          0
+        ],
+        "traits.plan.keyword": [
+          "premium"
+        ],
+        "traits.Trait_EC_5": [
+          0
+        ],
+        "traits.Trait_EC_6": [
+          1
+        ],
+        "cdmpAccountId.keyword": [
+          "232"
+        ],
+        "traits.Trait_EC_1": [
+          1
+        ],
+        "traits.Trait_EC_2": [
+          0
+        ],
+        "traits.unique_list_count": [
+          0
+        ],
+        "traits.name.keyword": [
+          "tiM1S23"
+        ],
+        "traits.address.country": [
+          "USA"
+        ],
+        "segments": [
+          61,
+          68
+        ],
+        "traits.address.state.keyword": [
+          "CA"
+        ],
+        "traits.Trait_agg_1": [
+          43
+        ],
+        "traits.Trait_agg_2": [
+          0
+        ],
+        "traits.address.state": [
+          "CA"
+        ],
+        "id.keyword": [
+          "232-UT4"
+        ],
+        "traits.Trait_agg_3": [
+          0
+        ],
+        "traits.Trait_agg_4": [
+          0
+        ],
+        "traits.address.street.keyword": [
+          "6th St"
+        ],
+        "traits.Trait_agg_5": [
+          17
+        ],
+        "traits.Trait_agg_6": [
+          17
+        ],
+        "traits.address.postalCode.keyword": [
+          "94103"
+        ],
+        "cdmpAccountId": [
+          "232"
+        ],
+        "audiences": [
+          12
+        ],
+        "id": [
+          "232-UT4"
+        ],
+        "traits.address.city.keyword": [
+          "San Francisco"
+        ],
+        "traits.Trait_EC_7": [
+          1
+        ],
+        "traits.traait_event_Counter_string": [
+          0
+        ],
+        "traits.address.street": [
+          "6th St"
+        ],
+        "traits.name": [
+          "tiM1S23"
+        ],
+        "traits.email.keyword": [
+          "TIM12S3@example.com"
+        ],
+        "traits.email": [
+          "TIM12S3@example.com"
+        ],
+        "traits.address.country.keyword": [
+          "USA"
+        ],
+        "userId": [
+          "UT4"
+        ],
+        "traits.logins": [
+          0
+        ],
+        "@timestamp": [
+          "2022-02-14T11:51:27.000Z"
+        ],
+        "traits.address.city": [
+          "San Francisco"
+        ],
+        "traits.address.postalCode": [
+          "94103"
+        ],
+        "traits.plan": [
+          "premium"
+        ],
+        "userId.keyword": [
+          "UT4"
+        ]
+      },
+      "highlight": {
+        "cdmpAccountId": [
+          "@kibana-highlighted-field@232@/kibana-highlighted-field@"
+        ]
+      },
+      "sort": [
+        1644839487000
+      ]
+    }
+  ]
+}
