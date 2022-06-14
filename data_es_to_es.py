@@ -45,6 +45,7 @@ total_records = data['count']
 from_no = 0
 batch_size = 10000
 to_no = batch_size
+headers = {'Content-Type': 'application/json'}
 
 
 def processDataUpload(data, tries):
@@ -70,21 +71,49 @@ def processDataUpload(data, tries):
 # LETS DO BATCH PROCSSING
 # COPY A BATCH OF DATA AND PUBLISH IT TO THE TO ES
 
+scroll_id = None
 while True:
     print("Round starts......")
-    url = base_url+"/_search?size="+str(batch_size)+"&from="+str(from_no)
-    from_no += batch_size
-    r = requests.get(url)
-    data = r.json()
-    print(url)
-    res = []
-    if data and data.get('hits', False):
-        data = data['hits']['hits']
-        for obj in data:
-            res.append(obj['_source'])
-        processDataUpload(res, 0)
+    if not scroll_id:
+        url = base_url+"/_search?scroll=1m&size=10000"
+        r = requests.post(url)
+        data1 = r.json()
+        print(url)
+        # print(data1)
+        res = []
+        if data1 and data1.get('hits', False):
+            data = data1['hits']['hits']
+            for obj in data:
+                res.append(obj['_source'])
+            if len(res) == 0:
+                break
+            processDataUpload(res, 0)
+        else:
+            break
+        scroll_id = data1['_scroll_id']
 
     else:
-        break
-    if from_no > total_records:
-        break
+        url = ES_URL_FROM+"_search/scroll"
+        scroll_payload = json.dumps({
+            'scroll': '1m',
+            'scroll_id': scroll_id
+        })
+
+        print(url)
+        print(scroll_payload)
+        r = requests.request("POST", url, data=scroll_payload, headers=headers)
+        data1 = r.json()
+        # print(data)
+
+        print(url)
+        res = []
+        if data1 and data1.get('hits', False):
+            data = data1['hits']['hits']
+            for obj in data:
+                res.append(obj['_source'])
+            if len(res) == 0:
+                break
+            processDataUpload(res, 0)
+        else:
+            break
+        scroll_id = data1['_scroll_id']
