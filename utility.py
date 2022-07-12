@@ -30,6 +30,13 @@ def getRandomFloat(low, high):
     return random.uniform(low, high)
 
 
+def getRandomNumbers(low,high,n):
+    li=[]
+    for i in range(n):
+        li.append(getRandomInt(low,high))
+    return li
+
+
 def getDates(startDate, endDate):
     temp = pandas.date_range(startDate, endDate, freq='d')
     res = [str(x) for x in temp]
