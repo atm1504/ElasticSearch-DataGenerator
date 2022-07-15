@@ -23,20 +23,23 @@ batch_size = 10000
 retries = 3
 
 # {
-# date : "2022-06-22",
-# audienceId: "12345",
-# audienceExtId : "ext12345",
-# campaignId: "c12312",
-# campaignName: "campaign 1",
-# lineId: "l4432",
-# uniqueSegments: [123,445,520],
-# segmentExp : <expression object>,
-# channel: "GOOGLE",
-# advertiserId: "23423",
-# advertiserName: "Advertiser 1",
-# totalImpressions : 773423,
-# cpm: 2.6,
-# totalCost:2010.8998
+#   date : "2022-06-22",
+#   audienceId: "12345",
+#   audienceExtId : "ext12345",
+#   campaignId: "c12312",
+#   campaignName: "campaign 1",
+#   lineId: "l4432",
+#   uniqueSegments: [123,445,520],
+#   segmentExp : <expression object>,
+#   channel: "GOOGLE",
+#   advertiserId: "23423",
+#   advertiserName: "Advertiser 1",
+#   totalImpressions : 773423,
+#   cpm: 2.6,
+#   totalCost:310.8998,
+#   dpCost : {
+#               dp1: 100, dp2: 90, dp3: 120
+#             }
 # }
 
 AUDIENCE_IDS = getRandomNumbers(10001, 96789, 10)
@@ -60,11 +63,16 @@ for date in DATES:
             obj['uniqueSegments'] = getRandomNumbers(111, 999, randint(1, 13))
             obj['segmentExp'] = ''
             obj['channel'] = CHANNELS[randint(0, 4)]
+            obj['datapartnerId'] = randint(10, 20)
             obj['advertiserId'] = '23423'
             obj['advertiserName'] = 'Advertiser ' + obj['advertiserId']
             obj['totalImpressions'] = randint(17342, 9773423)
             obj['cpm'] = getRandomFloat(1, 4)
             obj['totalCost'] = getRandomFloat(1900, 8767)
+            dpCost={}
+            for i in range(randint(1,4)):
+                dpCost['dp'+str(i)]=getRandomFloat(10, 444)
+            obj['dpCost']=dpCost
             res.append(obj)
 
 
@@ -88,7 +96,7 @@ def processDataUpload(data, tries):
 
 
 try:
-    processDataUpload(res,3)
+    processDataUpload(res, 3)
     with open('data.json', 'w') as f:
         json.dump(res, f)
     f.close()
