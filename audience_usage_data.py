@@ -70,7 +70,7 @@ i = 0
 for x in DATAPARTNER_ID:
     t = randint(3, 4)
     segments = []
-    for j in range(i,i+t):
+    for j in range(i, i+t):
         segments.append(SEGMENT_IDS[j])
     DATA_PARTNER_SEGMENT_MAP[x] = segments
     # print(segments)
@@ -81,7 +81,7 @@ i = 0
 # map between audience ids and datapartner ids
 for x in AUDIENCE_IDS:
     dps = []
-    for j in range(i,i+3):
+    for j in range(i, i+3):
         dps.append(DATAPARTNER_ID[j])
     AUDIENCE_ID_DATA_PARTNER_MAP[x] = dps
     i += 3
@@ -123,7 +123,8 @@ for date in DATES:
             obj['uniqueSegments'] = uniqueSegments
             obj['dpSegmentsCount'] = dpSegmentsCount
             obj['dpUniqueSegments'] = dpUniqueSegments
-            obj['segmentExp']=''
+            obj['dataPartners'] = dataPartners
+            obj['segmentExp'] = ''
 
             res.append(obj)
 
@@ -133,6 +134,7 @@ try:
     f.close()
 except:
     print("Error occurred while saving the data into json")
+
 
 def processDataUpload(data, tries):
     print("Processing data..........")
