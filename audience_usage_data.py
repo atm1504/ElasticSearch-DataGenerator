@@ -70,9 +70,10 @@ i = 0
 for x in DATAPARTNER_ID:
     t = randint(3, 4)
     segments = []
-    for j in range(i+t):
+    for j in range(i,i+t):
         segments.append(SEGMENT_IDS[j])
     DATA_PARTNER_SEGMENT_MAP[x] = segments
+    # print(segments)
     i += t
 
 AUDIENCE_ID_DATA_PARTNER_MAP = {}
@@ -80,7 +81,7 @@ i = 0
 # map between audience ids and datapartner ids
 for x in AUDIENCE_IDS:
     dps = []
-    for j in range(i+3):
+    for j in range(i,i+3):
         dps.append(DATAPARTNER_ID[j])
     AUDIENCE_ID_DATA_PARTNER_MAP[x] = dps
     i += 3
