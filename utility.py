@@ -31,10 +31,10 @@ def getRandomFloat(low, high):
 
 
 def getRandomNumbers(low,high,n):
-    li=[]
-    for i in range(n):
-        li.append(getRandomInt(low,high))
-    return li
+    li=set()
+    while len(li)<n:
+        li.add(getRandomInt(low,high))
+    return list(li)
 
 
 def getDates(startDate, endDate):

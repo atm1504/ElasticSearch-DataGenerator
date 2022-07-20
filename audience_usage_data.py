@@ -29,26 +29,62 @@ retries = 3
 #   campaignId: "c12312",
 #   campaignName: "campaign 1",
 #   lineId: "l4432",
-#   uniqueSegments: [123,445,520],
-#   segmentExp : <expression object>,
 #   channel: "GOOGLE",
 #   advertiserId: "23423",
 #   advertiserName: "Advertiser 1",
 #   totalImpressions : 773423,
 #   cpm: 2.6,
-#   totalCost:310.8998,
-#   dpCost : {
-#               dp1: 100, dp2: 90, dp3: 120
-#             }
+#   totalCost:2010.8998,
+#   dpCost: {
+#     100: 200.0,
+#     200: 500.00,
+#     301: 1310.8998
+#   },
+#   uniqueSegments: [25,63,33,21,342,1,2,23,4,5,6],
+#   totalSegmentsCount: 14,
+#   segmentExp : <expression object>,
+#   dpSegmentsCount: {
+#     100: 4,
+#     200: 2,
+#     301: 8
+#   },
+#   dpUniqueSegments: {
+#     100: [25,63,33],
+#     200: [21,342],
+#     301: [1,2,23,4,5,6]
+#   }
 # }
 
 AUDIENCE_IDS = getRandomNumbers(10001, 96789, 10)
 print(AUDIENCE_IDS)
-DATES = getDates("2022-05-22", "2022-07-12")
+DATES = getDates("2022-05-10", "2022-07-12")
 CAMPAIGNS_ID = ['c12312', 'c13221']
+DATAPARTNER_ID = getRandomNumbers(1111, 9999, 30)
 CHANNELS = ['GOOGLE', 'FACEBOOK', 'YAHOOJP', 'TIKTOK', 'TWITTER']
+SEGMENT_IDS = getRandomNumbers(10, 999, 120)
 
-# Populate
+DATA_PARTNER_SEGMENT_MAP = {}
+
+# Mapping between datapartner id an segments
+i = 0
+for x in DATAPARTNER_ID:
+    t = randint(3, 4)
+    segments = []
+    for j in range(i+t):
+        segments.append(SEGMENT_IDS[j])
+    DATA_PARTNER_SEGMENT_MAP[x] = segments
+    i += t
+
+AUDIENCE_ID_DATA_PARTNER_MAP = {}
+i = 0
+# map between audience ids and datapartner ids
+for x in AUDIENCE_IDS:
+    dps = []
+    for j in range(i+3):
+        dps.append(DATAPARTNER_ID[j])
+    AUDIENCE_ID_DATA_PARTNER_MAP[x] = dps
+    i += 3
+
 res = []
 
 for date in DATES:
@@ -57,24 +93,45 @@ for date in DATES:
             obj = dict()
             obj['date'] = date
             obj['audienceId'] = audienceId
+            obj['audienceExtId'] = 'ext'+str(audienceId)
             obj['campaignId'] = campaignId
             obj['campaignName'] = 'campaign '+campaignId
-            obj['lineId'] = 'l4432'
-            obj['uniqueSegments'] = getRandomNumbers(111, 999, randint(1, 13))
-            obj['segmentExp'] = ''
             obj['channel'] = CHANNELS[randint(0, 4)]
-            obj['datapartnerId'] = randint(10, 20)
+            obj['lineId'] = 'l4432'
+
             obj['advertiserId'] = '23423'
             obj['advertiserName'] = 'Advertiser ' + obj['advertiserId']
             obj['totalImpressions'] = randint(17342, 9773423)
             obj['cpm'] = getRandomFloat(1, 4)
-            obj['totalCost'] = getRandomFloat(1900, 8767)
-            dpCost={}
-            for i in range(randint(1,4)):
-                dpCost['dp'+str(i)]=getRandomFloat(10, 444)
-            obj['dpCost']=dpCost
+
+            dataPartners = AUDIENCE_ID_DATA_PARTNER_MAP[audienceId]
+            dpCost = {}
+            totalCost = 0
+            uniqueSegments = []
+            dpSegmentsCount = {}
+            dpUniqueSegments = {}
+            for x in dataPartners:
+                dpCost[x] = getRandomFloat(10, 10000)
+                totalCost += dpCost[x]
+                seg = DATA_PARTNER_SEGMENT_MAP[x]
+                uniqueSegments.extend(seg)
+                dpSegmentsCount[x] = len(seg)
+                dpUniqueSegments[x] = seg
+            obj['dpCost'] = dpCost
+            obj['totalCost'] = totalCost
+            obj['uniqueSegments'] = uniqueSegments
+            obj['dpSegmentsCount'] = dpSegmentsCount
+            obj['dpUniqueSegments'] = dpUniqueSegments
+            obj['segmentExp']=''
+
             res.append(obj)
 
+try:
+    with open('data.json', 'a') as f:
+        json.dump(res, f)
+    f.close()
+except:
+    print("Error occurred while saving the data into json")
 
 def processDataUpload(data, tries):
     print("Processing data..........")
